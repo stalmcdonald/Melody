@@ -8,9 +8,8 @@
 
 package com.cm.melody;
 
-
-
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.Window;
@@ -18,6 +17,7 @@ import android.view.WindowManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
+@SuppressLint("SetJavaScriptEnabled")
 public class MainActivity extends Activity {
 
 	@Override
@@ -28,9 +28,12 @@ public class MainActivity extends Activity {
 				getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
 				                                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_main);
+		//finding my custom view
 		WebView webView = (WebView)findViewById(R.id.webView);
+		//enables view to be posted to webview
 		webView.getSettings().setJavaScriptEnabled(true);
 		webView.setWebChromeClient(new WebChromeClient());
+		//referencing the www files (Html, CSS, and JS)
 		webView.loadUrl("file:///android_asset/www/index.html");
 	}
 
