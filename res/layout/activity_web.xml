@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical"
+    android:background="#C9C9C0"
+    tools:context=".WebActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+			
+        	<Button
+        	    android:id="@+id/goForward"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_centerVertical="true"
+        	    android:background="@drawable/goforward" />
+
+        	<Button
+        	    android:id="@+id/goBack"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentLeft="true"
+        	    android:layout_alignParentTop="true"
+        	    android:background="@drawable/goback" />
+
+        	<TextView
+        	    android:id="@+id/textView1"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_centerHorizontal="true"
+        	    android:layout_centerVertical="true"
+        	    android:textColor="#961b26"
+        	    android:text="Melody" />
+
+       </RelativeLayout>
+       
+        
+    <WebView
+        android:id="@+id/musicalWebView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

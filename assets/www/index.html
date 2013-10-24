@@ -3,65 +3,79 @@
 <!--
 
 Crystal McDonald
-AVF 1205
-Digitopia: Landing Page Demo App
+MDF3 1310
+Melody: Musical Notes
 -->
 
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Mobile IE needs ClearType for smoothing fonts -->
-<meta http-equiv="cleartype" content="on">
-
-<title>Crystal's Landing &mdash; AVF 1205 &amp; Demo App</title>
-<!-- StyleSheets under here -->
-
-<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css"/>
-<link rel="stylesheet" href="css/style.css"/>
-
-<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & attend detects -->
-<script src="js/libs/modernizr.custom.min.js"></script>
-</head>
-	<body>
-		<header>
-		
-		<nav>
-		<div id="escapehatch" class="demo"> <a href="index.html" id="demoName">Melody</a>
-		</div>
-		</nav>
-		</header>
-			<section  
-				<header class="label-name">
-					<h1>Musical Note App</h1>
-				</header>
-				
-				
-				<div class="button" />
-				A</div></a>
-				
-				<div class="button"/>
-				B</div></a>
-				
-				<div class="button" />
-				C</div></a> 
-				
-				<div class="button" />
-				D</div></a>
-<div class="button" />
-				E</div></a>
-				
-				<div class="button"/>
-				F</div></a>
-				
-				<div class="button" />
-				G</div></a> 
-				
-			
-			</section>
-				
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+        <meta http-equiv="cleartype" content="on">
+        <!-- StyleSheets under here -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & attend detects -->
+        <script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <span id="notes"></span>		
+            <nav>
+                <div id="escapehatch" class="demo"> <a href="index.html" id="demoName">Melody</a>
+                </div>
+            </nav>
+        </header>
+        <section  
+        <header class="label-name">
+            <h1>Musical Note App</h1>
+        </header>
+        <a href="#" onclick="playSound('file:///android_assets/www/piano_a.mp3');">
+            <div class="button" />
+                A
+            </div>
+        </a>
+        <a href="#" onclick="playSound('piano_b.mp3');">
+            <div class="button"/>
+                B
+            </div>
+        </a>
+        <a href="#" onclick="playSound('raw/piano_c.mp3');">
+            <div class="button" />
+                C
+            </div>
+        </a>
+        <a href="#" onclick="playSound('raw/piano_d.mp3');">
+            <div class="button" />
+                D
+            </div>
+        </a>
+        <a href="#" onclick="playSound('raw/piano_e.mp3');">
+            <div class="button" />
+                E
+            </div>
+        </a>
+        <a href="#" onclick="playSound('raw/piano_f.mp3');">
+            <div class="button"/>
+                F
+            </div>
+        </a>
+        <a href="#" onclick="playSound('raw/piano_g2.mp3');">
+            <div class="button" />
+                G
+            </div>
+        </a>
+        </section>
+        <script language="javascript" type="text/javascript">
+            function playSound(soundfile) {
+            document.getElementById("notes").innerHTML=
+            "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+            }
+        </script>
+        
+    </body>
 </html>
