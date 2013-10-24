@@ -1,201 +1,285 @@
-/*
+/* Landing Page Style */
 
-Title: Melody
-By: Crystal McDonald
-For: MDF3
-Assignment: Project 4
-Term: 1310
-
-*/
-
-/* Make it look like an Phone */
 body{
 	font-family: "Lucida Grande", "Arial", sans-serif;margin: auto;padding: 10px;
 }
 
-#cta{
-	width: 320px;
+
+body {
+background:#F6F6EE ; /* my bg color off white */
+font-family:arial, georgia, sans-serif;
+font-size:100%;
+height:100%;
+margin:0;
+overflow:auto;
+padding:0;
+text-align:left;
 }
 
-#site-wrapper{
-	background: url(../img/iphoneBG.jpg) no-repeat; 
+/* headers */
+h1,h2,h3,h4,h5,h6,p{
+border:0;
+font:inherit;
+font-size:100%;
+font-family: "Honey Script";
+/*
+margin:0;
+padding:0;
+vertical-align:baseline;
+*/
 }
 
-/* Font normalization 
- */
-
-body { 
-	font:12px//* 1.231 */; sans-serif; *font-size:small; 
+#escapehatch  {
+-moz-box-shadow:0 -3.5px 3.5px 0 rgba(0, 0, 0, 0.13) inset;
+-webkit-box-shadow:0 -3px 3px 0 rgba(0, 0, 0, 0.13) inset;
+background:#961b25 ;
+box-shadow:0 -3px 3px 0 rgba(0, 0, 0, 0.13) inset;
+font-family: georgia;
+height:70px;
+padding:1.5px 3% 0;
 }
-select, input, textarea, button { 
-	font:99% sans-serif; 
+
+#demoName {
+	float: none;
+	font-size: 4em;
+	font-family: "Honey Script"
+}
+html {
+			overflow-y:scroll;
+}
+/* label */
+
+#label {
+-moz-box-shadow:0 2px 5px 0 rgba(10, 10, 10, 0.2) inset, 0 -3px 3px 0 rgba(0, 0, 0, 0.15) inset;
+-webkit-box-shadow:0 2px 5px 0 rgba(10, 10, 10, 0.2) inset, 0 -3px 3px 0 rgba(0, 0, 0, 0.15) inset;
+background:#5A504E ; /* color of the header box */
+border-bottom:1px solid #B3C7C4;
+border-top:1px solid #B3C7C4;
+box-shadow:0 2px 5px 0 rgba(10, 10, 10, 0.2) inset, 0 -3px 3px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+/* category display  */
+.label-wrap {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+box-sizing:border-box;
+margin-bottom:7px;
+padding:8px 25px;
+position:relative;
+width:75%;
+text-align: center;
+display:block;
+}
+
+.label-name {
+-moz-border-radius:5px;
+-moz-box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+-moz-box-sizing:border-box;
+-webkit-border-radius:5px;
+-webkit-box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+-webkit-box-sizing:border-box;
+background:#c9c9c0 ;
+border:2px solid #c9c9c0;
+border-radius:5px;
+box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+box-sizing:border-box;
+margin-bottom:7px;
+padding:8px 25px;
+position:relative;
+width:100%;
+text-align: center;
+}
+
+.label-name h1 {
+color:#f6f6ee; /* same as bg color */
+font-size:1.5em;
+font-weight:300;
+text-decoration:none;
+text-shadow:2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+/* Changes the label info */
+.label {
+-moz-border-radius:5px;
+-moz-box-shadow:0 0 0 1px #E0DED8 inset, 2.5px 2.5px 0 rgba(0, 0, 0, 0.13);
+-moz-box-sizing:border-box;
+-webkit-border-radius:5px;
+-webkit-box-shadow:0 0 0 1px #E0DED8 inset, 2.5px 2.5px 0 rgba(0, 0, 0, 0.13);
+-webkit-box-sizing:border-box;
+background:#e9e9e4 ;
+border:2px solid #eeece6;
+border-radius:5px;
+box-shadow:inset 0 0 0 1px #E0DED8, 3px 3px 0 rgba(0, 0, 0, 0.13);
+box-sizing:border-box;
+min-height:270px;
+padding:15px;
+text-decoration:none;
+width:100%;
+}
+
+.label p {
+color:#5a504e;
+}
+
+.label a:hover {
+border-bottom:2px  #961b25;
+color:#B5B5B4;
+}
+
+/* Categories */
+/*
+.wrap-demo{
+-moz-border-radius:5px;
+-moz-box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+-moz-box-sizing:border-box;
+-webkit-border-radius:5px;
+-webkit-box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+-webkit-box-sizing:border-box;
+background:#c9c9c0 ;
+border:2px solid #c9c9c0;
+border-radius:5px;
+box-shadow:0 0 0 1px #B7B7B2 inset, 3px 3px 0 rgba(0, 0, 0, 0.15);
+box-sizing:border-box;
+margin-bottom:7px;
+padding:8px 25px;
+position:relative;
+width:100%;
+text-align: center;
+}
+*/
+
+
+/* THis keeps the boxes from running together */
+@media /*
+(min-width: 961px) and (max-width: 1480px) {
+.ios, .vids
+*/ {
+	margin: 5% 5% 5% 0;	
+}
+
+.projects, .discuss, .ios, .vids{
+	margin: 5% 5% 5% 0%;
+}
+
+/*  Buttons  */
+.button {
+-moz-border-radius:8px;
+-moz-box-shadow:inset 0 0 0 1.2px #b8ccd8, 5px 5px 0 rgba(0, 0, 0, 0.13);
+-moz-box-sizing:border-box;
+-moz-transition:.2s ease-in-out;
+-moz-transition-property:background-color, border, min-width, width, box-shadow, 0;
+-webkit-border-radius:12px;
+-webkit-box-shadow:inset 0 0 0 1px #b8ccd8, 5px 5px 0 rgba(0, 0, 0, 0.13);
+-webkit-box-sizing:border-box;
+-webkit-transition:.2s ease-in-out;
+-webkit-transition-property:background-color, border, min-width, width, box-shadow, 0;
+background:#8badc1;
+border:2.2px solid #6B92A5;
+border-radius:5px;
+box-shadow:0 0 0 1px #b8ccd8 inset, 2px 2px 0 rgba(0, 0, 0, 0.15);
+box-sizing:border-box;
+color:#E0DED8;
+font-family:  georgia;
+font-size:1.1em;
+font-weight:300;
+width:90%;
+padding:5.5px 0;
+text-align:center;
+text-decoration:none;
+text-shadow:2px 2px 0 rgba(0, 0, 0, 0.13);
+transition:.2s ease-in-out;
+transition-property:background-color, border, /* min-width, */ width, box-shadow, text-shadow, color;
+margin: 0 auto;
+}
+
+.button:hover {
+-moz-box-shadow:inset 0 0 0 1px #b3c7c4, 2px 2px 0 rgba(0, 0, 0, 0.15);
+-webkit-box-shadow:inset 0 0 0 1px #b3c7c4, 2px 2px 0 rgba(0, 0, 0, 0.15);
+background:#b8ccd8 ;
+border:2px solid #b8ccd8;
+box-shadow:inset 0 0 0 1px #b8ccd8, 2px 2px 0 rgba(0, 0, 0, 0.15);
+width:76.4%;
+color:#8badc1;
+text-shadow:1px 1px 0 #b8ccd8;
+}
+
+.button {
+margin-top:35px;
+}
+
+/* links */
+a:link,a:active,a:visited {
+-moz-transition:.2s ease-in-out;
+-moz-transition-property:border-bottom, border-color, color;
+-webkit-transition:.2s ease-in-out;
+-webkit-transition-property:border-bottom, border-color, color;
+border-bottom:2px;
+color:#E0DED8;
+font-weight:750;
+text-align:center
+text-decoration:none;
+transition:.5s ease-in-out;
+transition-property:border-bottom, border-color, color;
+text-decoration: none;
+}
+
+.wrap {
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box; 
+box-sizing:border-box;
+margin:auto;
+max-width:100%;
+padding:2% 4%;
+text-align:left;
+background: /* url(../img/iphoneBG.jpg) */ no-repeat;
+}
+
+/*  Footer  */
+#footer {
+clear:both;
+color:#b8ccd8;
+font-weight:300;
+padding:15px 0;
+text-align:center;
+text-shadow:1px 1px 0 #b5d2ce;
+width:100%;
+}
+
+.copyright {
+color:#b8ccd8;
+font-size:1.5em;
+text-shadow:1px 1px 0 #b5d2ce;
 }
 
 textarea { overflow: auto; 
-} 
-
-/* Headers (h1, h2, etc)  */
-h1, h2, h3, h4, h5, h6 { 
-	font-weight: bold; 
 }
 
-.thumb {
-	background:images/images/RSVP_CTA.png no-repeat;  /* CTA Image */
-	width: 142px;
-	height: 115px;
-	float: right;
-	z-index: 2;
+.video {
 	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
 }
 
-/*
- * Primary styles
- */
-
-body{
-	/* background: #2D1E44; */ text-align: center;font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: light; 
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-
-
-/* text and links */
-
-p {
-	 color: #07586f;    /* dark cruelen  */
+.container {
+	width: 800px;
+	max-width: 90%;
 }
-
-/* Headers*/
-h1 {
-	color: #7eba7c; font-size: 3em; margin: 0 0 32px 0; /* the green color */
-	font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: lighter; 
+img {
+	max-width: 100%;
+	height: auto;
 }
-
-a { 	
-	color: #040d12; text-decoration: none; /* the black color */
-}
-
-a:hover {
-	color:#a2b8b4; text-decoration: underline;  /* light gray */  /* hover for links */
-	
-}
-/* Buttons */
-.ui-btn-up-b {
-	background: #7ec042 !important;																	
-}
-.ui-btn-hover-b{
-	background: #07586f !important;
-}
-
- 
-/* list styles */
-li{
-	list-style: none; color: #233f64; /* dark cruelen */
-}
-#glist {
-	color:#567984; /* dark gray */
-}
-
-	
-/* Navigation*/
-nav li a{
-	color: #233f64;
-nav li a:hover{
-	color: #a2b8b4;/* the black color */
-}
-nav li.here a:hover{
-	color: #fff; text-decoration: none;} /*home*/
-
-nav li.here + li a {
-	background: none ;padding: 10px 0 20px 8px;
-}
-
-
-
-[type = 'radio'] {
-	border: none; width: inherit;
-}
- 
-span{
-	color: #002E44; /* dark blue-black */ /*  Will change footer color to white if not committed out. */
-
-}
-    
-#errors{
- 	color: red;
-}
-
-/* Icons*/
-
-
-.ui-icon {
-	background-color: 						#a2b8b4; /* light gray */  /* bg color of the arrow and home icons */
-}
-
-/* checks,radios */
-.ui-checkbox .ui-icon {
-	background-color: 						#a2b8b4; /* light gray */ 
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-}
-
-/* in-active state bg on checkbox & radio icons */
-.ui-icon-checkbox-off,
-.ui-icon-radio-off {
-	background-color:  #fff;
-}
-
-/* active state bg on checkbox & radio icons */
-.ui-checkbox-on .ui-icon,
-.ui-radio-on .ui-icon {
-	background-color: ##a2b8b4; /* light gray */  /* NOTE: this hex should match the active state color. It's repeated here for cascade */  
-}   
-/* Button colors */
-.ui-btn {
-	border: 2px solid 		#08738d; /* 2nd blue */
-	background: 			#FFF;
-}
-
-/* background color inside the drop down menu */
-.ui-btn-inner{
-	/* border: 1px solid 		#07586f; */
-	background: #EFEFEF;
-}
-
-/* labels */
-label.ui-select {
-	/* background-color: #fff; */
-}
-
-/* added from form3 ---------------------------------------------------------------------------------------------*/
-/* F bar theme - just for the headers */
-.ui-bar-f {
-	border: 2px solid 		#08738d;
-	background: #7ec042 !important;	
-}
-/* Buttons */
-.ui-btn-up-f {
-	background: #7ec042 !important;																	
-}
-
-
-}
-/* open errors link color changed on food form */
-#formerrorslink{
-	color: #07586f;
-}
-
-/* Red error message */
-label.error{
-	display: block; margin: 10 px 0; color: #cc0000;
-	font-size: 14px; 
-}
-
-/* Copyright footer */
-.copyrightBar{
-	Display: center;
-	font-size: x-small;
-}
-.refreshBar{
-	Display: center;
-	font-size: x-small;
+@media \0screen {
+  img { 
+  	width: auto; /* for ie 8 */
+  }
 }
