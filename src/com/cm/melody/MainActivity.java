@@ -3,6 +3,8 @@ package com.cm.melody;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
 
 public class MainActivity extends Activity {
 
@@ -10,6 +12,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		WebView webView = (WebView)findViewById(R.id.webView);
+		webView.getSettings().setJavaScriptEnabled(true);
+		webView.setWebChromeClient(new WebChromeClient());
+		webView.loadUrl("file:///android_asset/www/index.html");
 	}
 
 	@Override
