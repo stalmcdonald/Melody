@@ -8,25 +8,23 @@
 
 package com.cm.melody;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.res.AssetFileDescriptor;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.View.OnClickListener;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.Toast;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class MainActivity extends Activity {
@@ -59,7 +57,7 @@ public class MainActivity extends Activity {
 		 * Implicit Intent: Launches Web Browsers to open website
 		 */
 			public void onClick(View webview) {
-				// sends user to site that shows more information on sailing in San Francisco
+				// sends user to site that shows more information on Reading music notes
 	Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.teoria.com/tutorials/reading/12-notes.php"));
 	startActivity(viewIntent); 
 	playsound();
@@ -78,7 +76,7 @@ public class MainActivity extends Activity {
 			        MediaPlayer mp = new MediaPlayer();
 		        	//grabbing soundfile from assets
 		            AssetFileDescriptor descriptor = getAssets().openFd("piano_c.mp3");
-		          
+		            
 		            mp.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
 		            descriptor.close();
 		            mp.prepare();
